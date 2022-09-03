@@ -9,20 +9,29 @@ Super Dark bro: #0A0601
 
 */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  /* 10px / 16px */
+  font-size: 62.5%;
 }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.7;
   background-color: #311e04;
   color: #777;
-  padding: 15px;
+  padding: 1.5rem;
+
+  box-sizing: border-box;
 }
 
 .header {
@@ -43,8 +52,8 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 
 /* 
@@ -54,9 +63,9 @@ body {
 
 .logo-text {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
 }
 
 .text-box {
@@ -74,14 +83,14 @@ body {
   /* this fixes the slight shaking on the animation end,
   you put this fix here because this is the parent element. */
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 700;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 
   animation-name: moveInLeft;
   animation-duration: 1s;
@@ -93,9 +102,9 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.75rem;
 
   animation-name: moveInRight;
   animation-duration: 1s;
@@ -105,11 +114,11 @@ body {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(5px);
+    transform: translateX(0.5rem);
   }
 
   100% {
@@ -121,11 +130,11 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-5px);
+    transform: translateX(-0.5rem);
   }
 
   100% {
@@ -137,11 +146,11 @@ body {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
 
   80% {
-    transform: translateY(-3px);
+    transform: translateY(-0.3rem);
   }
 
   100% {
@@ -154,21 +163,22 @@ body {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(10, 6, 1, 0.8);
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(10, 6, 1, 0.8);
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(10, 6, 1, 0.5);
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(10, 6, 1, 0.5);
 }
 
 .btn-white {
@@ -181,7 +191,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
