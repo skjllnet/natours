@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for a tourism website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skjllnet/natours.git"
+  },
+  "author": "Vassil Kurktchiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skjllnet/natours/issues"
+  },
+  "homepage": "https://github.com/skjllnet/natours#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
