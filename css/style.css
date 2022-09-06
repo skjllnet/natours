@@ -27,29 +27,26 @@ body {
   position: relative;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header .header__logo-text {
+    color: #ffc0cb;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 /* 
 .logo {
   height: 35px;
 } */
-.header__logo-text {
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 400;
-  letter-spacing: 0.2rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
