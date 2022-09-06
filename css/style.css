@@ -1,78 +1,3 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  /* 10px / 16px */
-  font-size: 62.5%; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  background-color: #311e04;
-  color: #777;
-  padding: 1.5rem;
-  box-sizing: border-box; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(78, 48, 6, 0.2), #311e04), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header .header__logo-text {
-    color: #ffc0cb;
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: 0.2rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
-/* 
-.logo {
-  height: 35px;
-} */
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  /* this fixes the slight shaking on the animation end,
-  you put this fix here because this is the parent element. */
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    /* animation-delay: 3s; 
-    animation-iteration-count: 3;*/ }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-in; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -102,6 +27,53 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* 10px / 16px */
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  background-color: #311e04;
+  color: #777;
+  padding: 1.5rem;
+  box-sizing: border-box; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  /* this fixes the slight shaking on the animation end,
+  you put this fix here because this is the parent element. */
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    /* animation-delay: 3s; 
+    animation-iteration-count: 3;*/ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -145,3 +117,27 @@ body {
 .btn--animated {
   animation: moveInBottom 0.8s ease-in 0.75s;
   animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(78, 48, 6, 0.2), #311e04), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header .header__logo-text {
+    color: #ffc0cb;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
