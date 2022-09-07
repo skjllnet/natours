@@ -1,7 +1,7 @@
 .card {
   //Functionality
-  perspective: 150rem;
-  -moz-perspective: 150rem;
+  perspective: 100rem;
+  -moz-perspective: 100rem;
   position: relative;
   height: 52rem;
 
@@ -103,7 +103,7 @@
     color: $color-white;
     position: absolute;
     top: 12rem;
-    right: 2rem;
+    right: 0;
     width: 75%;
   }
 
@@ -157,7 +157,7 @@
     }
   }
 
-  // FRONT SIDE STYLING
+  // BACK SIDE STYLING
 
   &__cta {
     position: absolute;

@@ -189,8 +189,8 @@ body {
   transform: translateY(0); }
 
 .card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
+  perspective: 100rem;
+  -moz-perspective: 100rem;
   position: relative;
   height: 52rem; }
   .card__side {
@@ -239,7 +239,7 @@ body {
     color: #fff;
     position: absolute;
     top: 12rem;
-    right: 2rem;
+    right: 0;
     width: 75%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
